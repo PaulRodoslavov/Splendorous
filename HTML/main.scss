@@ -1,0 +1,391 @@
+$primary-color:#7e5c88;
+$text-color:#979797;
+$font-stack:"Georgia", sans-serif;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	margin:0px;
+	border-top:5px solid $primary-color;
+	a {
+		text-decoration: none;
+	}
+}
+.clear-fix{
+	clear:both;
+	content:"";
+}
+.wrapper {
+	width:940px;
+	margin:0 auto;
+}
+.head-logo{
+	display:inline-block;
+	float:left;
+	text-decoration:none;
+	margin-top:40px;
+}
+.head-a {
+	display:inline-block;
+	float:right;
+	text-decoration:none;
+}
+.head-nav{
+	padding:53px 20px 33px;
+	display: inline-block;
+	font:13px $font-stack;
+	color: $text-color;
+	&:hover{
+		background-color: $primary-color;
+		color: white;
+	}
+}
+.logo-text {
+	color: $primary-color;
+	font:32px $font-stack;
+}
+.under-logo { 	
+	color: $text-color;
+	font:12px $font-stack;
+	margin-top: 13px;
+}
+.slider{
+	position: relative;
+	
+	margin-top: 55px;
+	
+	.left {
+		background: url(left.png);
+		height:27px;
+		width:15px;
+		position:absolute;
+		top: 50%;
+		right:100%;
+	}
+	.content {
+		float:left;
+		width:315px;		
+		margin: 98px 0 0 63px;
+		
+	}
+	.right {
+		background: url(right.png);
+		height:27px;
+		width:15px;
+		position:absolute;
+		top: 50%;
+		left:100%;
+	}
+	.content-title {
+		font:46px $font-stack;
+		color: #333333;
+		line-height: 46px;
+	}
+	.content-text{
+		font:12px $font-stack;
+		color:$text-color;
+		line-height: 19px;
+		width: 300px;
+		margin:30px 0;
+	}
+	.content-button{
+		width: 140px;
+		height: 35px;
+		background-color:$primary-color;
+		border-radius: 20px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.button-text{
+		font:13px $font-stack;
+		color: white;	
+		text-align: center;
+	}
+	.sircle {
+		width: 430px;
+		height: 430px;
+		border: 25px solid $primary-color;
+		float:right;
+		border-radius: 50%;		
+		background: url(city.jpg);
+		margin: 0 45px 0 0;
+
+	}
+}
+.ellipse{
+	margin-top:45px;
+	display:block;
+	img {
+		display: block;
+		width:600px;		
+		margin:0 auto;	
+		position:relative;
+		top: 5px;		
+	}
+}
+.border{
+	border-top:1px solid #e0e0e0;
+}
+.border2{
+	border-top:1px solid #e0e0e0;
+	margin-bottom: 40px;
+}
+.border3{
+	border-top:1px solid #e0e0e0;
+	margin:12px 0;
+}
+.projects {
+	
+	.a-project{
+		display: inline-block;
+		width: 225px;
+		height: 302px;
+		text-align: center;
+		margin-top: 40px;
+		margin-right:13px;
+		&:last-child{
+			margin-right:0;
+		}
+	}
+	img {
+		display: block;
+	}
+	.img-border{
+		height: 40px;
+		background-color:#eeeeee;
+		padding-top:10px;
+	}
+	.top-img{
+		font:12px $font-stack;
+		color: #333333;
+		font-weight: bold;
+	}
+	.under-img{
+		font:12px $font-stack;
+		color: $text-color;
+	}
+	.name-projects{
+		font:16px $font-stack;
+		color: #333333;
+		margin-top: 65px;
+	}
+	.border{
+		margin-top: 10px;
+	}
+	a:hover {
+		& > .img-border {
+			background-color:$primary-color;
+			& > .top-img {
+				color: #ffffff;
+			}
+			& > .under-img {
+				color: #ffffff;
+			}
+		}			
+	}
+}
+
+.wrap-content{
+	display:inline-block;
+	margin-top:60px;
+	.title-content{
+		font:16px $font-stack;
+		color: #333333;
+		line-height: 19px;		
+		margin-bottom: 10px;
+	}
+	img {
+		display: block;
+	}
+	.inner-content{
+		display: inline-block;
+		width: 225px;
+		margin-right: 13px;
+		margin-top: 40px;
+		&:last-child{
+			margin-right: 0;
+		}	
+		.title-inner{
+			font:14px $font-stack;
+			font-weight: bold;
+			color:$primary-color;
+			margin-top:20px;
+		}
+		.under-title{
+			font:11px $font-stack;
+			color:$text-color;
+			margin-top:10px;
+		}
+		.text-content{
+			font:12px $font-stack;
+			color:$text-color;
+			line-height: 17px;
+			margin-top:15px;
+		}
+	}
+}
+.wrap-column{
+	display:inline-block;
+	margin:60px 0 0 13px;
+	width:225px;
+	vertical-align: top;
+	.wrap-column-title{
+		font:16px $font-stack;
+		color: #333333;
+		margin-bottom: 10px;		
+	}	
+	.img-column{
+		float: left;
+		border: 1px solid #d8d8d8;
+		padding: 5px;
+		margin-right: 9px;
+		img {
+			display: block;
+		}		
+	}
+	.title-column{
+		font:12px $font-stack;
+		color: $text-color;
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+	.text-column{
+		font:12px $font-stack;
+		color: $text-color;
+		line-height: 17px;	
+		margin-bottom: 5px;
+		
+	}
+	.link-column{
+		font:12px $font-stack;
+		color: $primary-color;
+		display: inline-block;				
+	}
+	.tree{
+		display: inline-block;
+		font:12px $font-stack;
+		color: $primary-color;
+		display: inline-block;
+		font-weight: bold;
+	}
+}
+.footer-wrap{
+	margin-top: 40px;
+	margin-bottom: 30px;
+	.footer-inner{
+		display: inline-block;
+		width:225px;
+		margin-right:13px;
+		vertical-align: top;
+		&:last-child{
+			margin-right: 0;
+		}
+		.footer-title{
+			font:12px $font-stack;
+			font-weight: bold;
+			color:$text-color;
+			margin-bottom: 40px;
+		}
+		.post-title{
+			font:13px $font-stack;
+			font-weight: bold;
+			color:$text-color;
+		}
+		.discript-title{
+			font:11px $font-stack;
+			color:$text-color;
+			margin-top: 5px;
+		}
+		.text-footer{
+			font:12px $font-stack;
+			color:$text-color;
+			line-height: 19px;
+			margin-top: 18px;
+		}
+		.link-footer{
+			font:12px $font-stack;
+			color: #7e5b87;
+			float:right;
+			margin-top: 32px;
+		}
+	}
+	.footer2-list{
+		font:12px $font-stack;		
+		border-bottom:1px solid #e0e0e0;
+		padding-bottom:10px;
+		margin-bottom: 15px;
+		a {
+			color: $primary-color;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+		
+	}
+	.contact{
+		font:12px $font-stack;
+		color: $text-color;
+		div{
+			margin-top: 2px;
+		}
+		.contact-space{
+			margin-top: 25px;
+		}
+	}
+	.social{
+		border-bottom:1px solid #e0e0e0;
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: o;
+		}
+		&:hover > .social-sircle{
+			background-color: #7e5c88;
+		}
+		&:hover > .social-title{
+				color: #7e5b87;
+			}
+		.social-sircle{
+			display: inline-block;
+			width:32px;
+			height: 32px;
+			background-color: #c3c3c3;
+			border-radius: 50%; 
+			position:relative;
+			margin-bottom: 6px;
+			img{
+				position:absolute;
+			}
+			.img1{
+				top:26%;
+				left:27%;
+			}
+			.img2{
+				top:30%;
+				left:29%;
+			}
+			.img3{
+				top:25%;
+				left:25%;
+			}
+			.img4{
+				top:28%;
+				left:33%;
+			}
+		}
+		.social-title{
+			display: inline-block;
+			vertical-align: 120%;
+			font:12px $font-stack;
+			color: #7e5c88;
+			margin-right: 11px;			
+		}
+	}
+}
+.sign{
+		font:12px $font-stack;
+		color: $text-color;
+		margin-top: 25px;
+	}	
